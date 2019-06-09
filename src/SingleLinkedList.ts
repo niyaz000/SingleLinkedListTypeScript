@@ -17,8 +17,12 @@ export default class SingleLinkedList<T> {
     this.head = new Node(data, this.head);
   }
 
-  public peekFront() : T {
+  public peekFront() :T {
     return this.head == null ? null : this.head.data;
+  }
+
+  public isEmpty() :boolean {
+    return this.head == null;
   }
 
   public toList(): T[]
