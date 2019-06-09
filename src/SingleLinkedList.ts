@@ -64,4 +64,8 @@ export default class SingleLinkedList<T>
     return array;
   }
 
+  public clear()
+  {
+    this.head = null;
+  }
 }

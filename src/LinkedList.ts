@@ -5,4 +5,6 @@ export default interface LinkedList<T>
   peekFront() :T;
   peekBack() :T;
   isEmpty() :boolean;
+  addBack(data: T);
+  clear();
 }
