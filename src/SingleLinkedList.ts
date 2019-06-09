@@ -1,6 +1,7 @@
 import Node from './Node';
 
-export default class SingleLinkedList<T> {
+export default class SingleLinkedList<T>
+{
 
   private head: Node<T>;
 
@@ -36,6 +37,19 @@ export default class SingleLinkedList<T> {
   public isEmpty() :boolean
   {
     return this.head == null;
+  }
+
+  public addBack(data: T)
+  {
+    if(this.isEmpty()) {
+      return this.add(data);
+    }
+    let temp = this.head;
+    while(temp.next != null)
+    {
+      temp = temp.next;
+    }
+    temp.next = new Node(data, null);
   }
 
   public toList(): T[]
