@@ -68,4 +68,18 @@ export default class SingleLinkedList<T>
   {
     this.head = null;
   }
+
+  public length(): number
+  {
+    let temp = this.head;
+    let length = 0;
+    while(temp != null)
+    {
+      temp = temp.next;
+      ++length;
+    }
+    return length;
+  }
+
 }
+

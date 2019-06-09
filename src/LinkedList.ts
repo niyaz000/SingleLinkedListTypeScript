@@ -7,4 +7,5 @@ export default interface LinkedList<T>
   isEmpty() :boolean;
   addBack(data: T);
   clear();
+  length();
 }
