@@ -81,5 +81,19 @@ export default class SingleLinkedList<T>
     return length;
   }
 
+  public reverse()
+  {
+    let temp = this.head;
+    let prev = null;
+    while(temp != null)
+    {
+      let next = temp.next;
+      temp.next = prev;
+      prev = temp;
+      temp = next;
+    }
+    this.head = prev;
+  }
+
 }
 

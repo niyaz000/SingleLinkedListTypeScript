@@ -8,4 +8,5 @@ export default interface LinkedList<T>
   addBack(data: T);
   clear();
   length();
+  reverse();
 }
