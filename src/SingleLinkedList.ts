@@ -17,6 +17,10 @@ export default class SingleLinkedList<T> {
     this.head = new Node(data, this.head);
   }
 
+  public peekFront() : T {
+    return this.head == null ? null : this.head.data;
+  }
+
   public toList(): T[]
   {
     let array = [];
