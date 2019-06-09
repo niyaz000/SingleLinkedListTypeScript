@@ -21,7 +21,20 @@ export default class SingleLinkedList<T> {
     return this.head == null ? null : this.head.data;
   }
 
-  public isEmpty() :boolean {
+  public peekBack() :T
+  {
+    if(this.isEmpty()) {
+      return null;
+    }
+    let temp = this.head;
+    while(temp.next != null) {
+      temp = temp.next;
+    }
+    return temp.data;
+  }
+
+  public isEmpty() :boolean
+  {
     return this.head == null;
   }
 
