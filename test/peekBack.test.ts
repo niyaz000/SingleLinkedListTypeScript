@@ -1,4 +1,4 @@
-import SingleLinkedList from '../src/SingleLinkedList';
+import SingleLinkedList from '../src/Implementation/SingleLinkedList';
 
 describe('peekBack', () => {
 
